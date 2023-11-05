@@ -7,20 +7,19 @@ function getValues() {
     var carPay = parseFloat(document.getElementById("carPay").value);
     var studentLoan = parseFloat(document.getElementById("studentLoans").value);
 
-    var LTVResult = LTV(downPay, houseValue);
-    alert(LTVResult);
-
+    var LTVValue = LTV(downPay, houseValue);
     var PMIValue = PMI(houseValue);
-
-    var monthlyDebtResult = monthlyDebt(carPay, creditCardPay, mortgage, studentLoan, PMIValue);
-
-    var DTIResult = DTI(monthlyDebtResult, grossMonthlyIncome);
-
-    var FEDTIResult = FEDTI(mortgage, grossMonthlyIncome);
+    var monthlyDebtValue = monthlyDebt(carPay, creditCardPay, mortgage, studentLoan, PMIValue);
+    var DTIValue = DTI(monthlyDebtValue, grossMonthlyIncome);
+    var FEDTIValue = FEDTI(mortgage, grossMonthlyIncome);
+    alert(LTVValue);
+    alert(PMIValue);
+    alert(DTIValue);
+    alert(FEDTIValue);
 }
 
 function LTV(downPayment, houseValue) {
-    return downPayment / houseValue;
+    return 1-(downPayment/houseValue);
 }
 
 function PMI(houseValue) {
@@ -28,7 +27,13 @@ function PMI(houseValue) {
 }
 
 function monthlyDebt(carPay, creditCardPay, mortgage, studentLoan, PMIValue) {
-    return carPay + creditCardPay + mortgage + studentLoan + PMIValue;
+    var sum = 0;
+    sum += carPay;
+    sum += creditCardPay;
+    sum += mortgage;
+    sum += studentLoan;
+    sum += PMIValue;
+    return sum;
 }
 
 function DTI(monthlyDebt, grossMonthlyIncome) {

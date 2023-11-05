@@ -125,6 +125,7 @@ nav ul li a {
 
 nav ul li a:hover {
   color: white;
+  text-shadow: 3px 3px black;
 }
 
 /* Styling for the button */
