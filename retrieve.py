@@ -42,6 +42,7 @@ def upload_csv():
 
             for row in csv_data:
                 cursor.execute('''INSERT INTO "HomeBuyerInfo" (
+                    "Id",
                     "GrossMonthlyIncome",
                     "CreditCardPayment",
                     "CarPayment",
