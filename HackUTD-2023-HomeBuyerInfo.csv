@@ -1,4 +1,3 @@
-ID,GrossMonthlyIncome,CreditCardPayment,CarPayment,StudentLoanPayments,AppraisedValue,DownPayment,LoanAmount,MonthlyMortgagePayment,CreditScore
 1,3103.00,317.00,374.00,250.00,268468.00,32216.16,236251.84,1127.90,778
 2,2939.00,368.00,395.00,228.00,335467.00,30192.03,305274.97,2240.00,546
 3,4676.00,222.00,352.00,368.00,461177.00,36894.16,424282.84,2277.64,736
