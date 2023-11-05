@@ -143,3 +143,41 @@ section {
 #services {
   background-color: #d0d0d0;
 }
+
+
+.contact-form {
+  max-width: 60vw; /* 60% of the viewport width */
+  /* max-height: 80vh; Limiting the max height to 80% of the viewport height */
+  margin: 0 auto;
+  padding: 5vw; /* 5% of the viewport width for padding */
+  border: 1px solid #ccc;
+  border-radius: 2vw; /* 2% of the viewport width for border radius */
+  background: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 3vw; /* 3% of the viewport width for margin */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 94%; /* 94% of the available width within the form-group */
+   max-height: 60vh; /* Limiting the max height to 80% of the viewport height */
+  padding: 2vw; /* 2% of the viewport width for padding */
+  border: 1px solid #ccc;
+  border-radius: 1vw; /* 1% of the viewport width for border radius */
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input[type="submit"] {
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  padding: 2vw 4vw; /* 2% of the viewport width for vertical padding, 4% for horizontal padding */
+  border: none;
+  border-radius: 1vw; /* 1% of the viewport width for border radius */
+}

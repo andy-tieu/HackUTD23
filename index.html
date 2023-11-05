@@ -54,7 +54,7 @@
         </div>    
     </div>
 
-    <div id="services" style="height: 100vh; background-color: #d0d0d0;">Services Section
+    <div id="services" style="height: 125vh; background-color: #d0d0d0;">Services Section
         <title>Button to Services Section</title>
         <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     </head>
@@ -68,6 +68,20 @@
             <p>This is the content for the Services Section.</p>
         </section>
     </div>
-    <div id="contact" style="height: 100vh; background-color: #c0c0c0;">Contact Section</div>
+    <div>Contact Section
+        <br>
+        <form action="send_email.php" method="post">
+            <label for="to">To:</label>
+            <input type="email" id="to" name="to" required><br><br>
+    
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required><br><br>
+    
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+    
+            <input type="submit" value="Send Email">
+        </form>
+    </div>  
 </body>
 </html>
