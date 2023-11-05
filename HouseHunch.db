@@ -1,0 +1,4 @@
+CREATE DATABASE HouseHunch
+.mode csv HomeBuyersInfo
+.import C:\Users\absol\Downloads\HackUTD-2023-HomeBuyerInfo.csv HomeBuyersInfo
+
