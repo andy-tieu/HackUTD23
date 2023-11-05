@@ -27,7 +27,7 @@ def upload_csv():
     
     if file:
         # Connect to your local SQLite database (you can use other databases as well)
-        conn = sqlite3.connect('your_database.db')
+        conn = sqlite3.connect('database r/w.db')
         cursor = conn.cursor()
         
         # Define the table structure in your database
