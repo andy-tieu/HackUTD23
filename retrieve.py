@@ -1,5 +1,5 @@
 # from google.cloud import bigquery
-import os
+# import os
 
 # client = bigquery.Client()
 # query = '''
