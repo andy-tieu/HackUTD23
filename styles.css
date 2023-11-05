@@ -31,6 +31,12 @@ h2 {
   padding: 50px;
 }
 
+#description3 {
+  font-size: 22px;
+  text-shadow: 0.5px 0.5px 1px #3A4D39;
+  padding: 50px;
+}
+
 #importantText {
   color: #4F6F52;
   font-weight: bold;
@@ -56,6 +62,14 @@ h2 {
 
 .column.two {
   width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 40px;
+}
+
+.column.quarter {
+  width: 25%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -261,6 +275,17 @@ button {
 #location {
   border-radius: 8px;
   box-shadow: 10px 10px 6px 3px #739072;
+}
+
+/* Formatting for response towards user input */
+#formResponse {
+  color: black;
+  text-shadow: 0.5px 0.5px 1px #3A4D39;
+  font-size: 20px;
+  margin: auto;
+  padding: 10px;
+  width: 40%;
+  text-align: center;
 }
 
 /* Formatting for footer section of website for visual appeal */
