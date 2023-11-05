@@ -9,6 +9,21 @@ function getValues() {
 
     var LTV = LTV(downPay, houseValue);
     alert(LTV);
+
+    fetch('/api/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(inputData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Handle the API response data
+    })
+    .catch(error => {
+        // Handle any errors
+    });
 }
 
 function LTV(downPayment, houseValue) {
