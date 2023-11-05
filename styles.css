@@ -149,6 +149,7 @@ nav ul li a:hover {
 
 .big-button:hover {
   color: #ECE3CE;
+  text-shadow: 2px 2px black;
 }
 
 /* Styling for the sections */
@@ -296,4 +297,5 @@ footer {
 
 .footer a:hover {
   color: white;
+  text-shadow: 3px 3px black;
 }
