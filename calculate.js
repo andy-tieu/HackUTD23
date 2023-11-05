@@ -28,7 +28,7 @@ function getValues() {
         document.getElementById("creditScoreOut").innerHTML = "Your credit score is " + creditScore + ", which is greater than or equal to 640."
         + " There is nothing else to do with credit score since you meet the required condition."
     }
-    
+
     if(LTVValue > 0.80) {
         document.getElementById("LTVOut").innerHTML = "Your current loan-to-value is " + LTVValue*100 + "%, which exceeds the 80% needed to be eligible."
         + " The recommended course of action here is to find a cheaper appraised house or increase down payment to reach the 80% and avoid the private mortgage insurance."
@@ -86,3 +86,4 @@ function DTI(monthlyDebt, grossMonthlyIncome) {
 function FEDTI(mortgage, grossMonthlyIncome) {
     return mortgage / grossMonthlyIncome;
 }
+
