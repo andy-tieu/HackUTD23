@@ -1,1 +1,1 @@
-SELECT * FROM HomeBuyerInfo WHERE ID = 1;
+SELECT * FROM HomeBuyersInfo WHERE ID = 1;
