@@ -18,6 +18,34 @@ function getValues() {
     var monthlyDebtValue = monthlyDebt(carPay, creditCardPay, mortgage, studentLoan, PMIValue);
     var DTIValue = DTI(monthlyDebtValue, grossMonthlyIncome);
     var FEDTIValue = FEDTI(mortgage, grossMonthlyIncome);
+    console.log()
+
+    const data = {
+        creditScore: 750,
+        grossMonthlyIncome: 6000,
+        houseValue: 250000,
+        downPayment: 50000,
+        mortgage: 200000,
+        creditCardPayment: 100,
+        carPayment: 200,
+        studentLoanPayment: 300,
+      };
+      
+      // Convert the data to a JSON string
+      const jsonData = JSON.stringify(data);
+      
+      // Set up the request headers
+      const headers = {
+        'Content-Type': 'application/json',
+      };
+
+    fetch('https://fictional-spork-7v9qx7px9g6r3rgx-5000.app.github.dev/submit', {
+        method: 'POST',
+        headers: headers,
+        body: jsonData,
+      })
+
+
 
     if(creditScore < 640) {
         document.getElementById("creditScoreOut").innerHTML = "Your credit score is " + creditScore + ", which is less than 640."
