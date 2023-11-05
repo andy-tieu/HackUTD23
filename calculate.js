@@ -1,4 +1,5 @@
 function getValues() {
+    var downPay = document.getElementById("downPay").value;
     var grossMonthlyIncome = document.getElementById("grossIncome").value;
     var houseValue = document.getElementById("houseValue").value;
     var mortgage = document.getElementById("mortgage").value;
@@ -6,7 +7,8 @@ function getValues() {
     var carPay = document.getElementById("carPay").value;
     var studentLoan = document.getElementById("studentLoans").value;
 
-    alert(mortgage);
+    var LTV = LTV(downPay, houseValue);
+    alert(LTV);
 }
 
 function LTV(downPayment, houseValue) {

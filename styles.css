@@ -1,3 +1,4 @@
+/* General set-up to have no spacing at first use */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,20 +6,67 @@
     font-family: 'Lexend Deca', sans-serif;
 }
 
+/* Set-up body info to keep same background color and align all text */
 body {
-    background-color: #FFFBF5;
+    background-color: #ECE3CE;
     text-align: center;
-    color: #C3ACD0;
+    color: #363062;
 }
 
 h2 {
-  color: #7743DB;
-  font-size: 30px;
+  color: #739072;
+  font-size: 45px;
+  text-shadow: 2px 2px #3A4D39;
+}
+
+/* Formats paragraph next to main image on home screen */
+#description {
+  font-size: 22px;
+  text-shadow: 0.5px 0.5px 1px #3A4D39;
+}
+
+#description2 {
+  font-size: 20px;
+  text-shadow: 0.5px 0.5px 1px #3A4D39;
+  padding: 50px;
 }
 
 #importantText {
-  color: #7743DB;
+  color: #4F6F52;
   font-weight: bold;
+  font-size: 22.5px;
+}
+
+#importantText2 {
+  color: #4F6F52;
+  font-weight: bold;
+  font-size: 20.5px;
+}
+
+/* Rounds corners of image on home screen */
+#homeImg {
+  border-radius: 16px;
+  box-shadow: 12px 12px 4px 3px #739072;
+}
+
+/* Create columns to split page in half*/
+.column {
+  float: left;
+}
+
+.column.two {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 40px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .content {
@@ -44,9 +92,9 @@ header {
   justify-content: center;
   align-items: center;
   position:sticky;
-  background-color: #C3ACD0;
-  color: #fff;
-  padding: 20px;
+  background-color: #3A4D39;
+  color: #ECE3CE;
+  padding: 25px;
 }
 
 .navbar {
@@ -65,12 +113,18 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 35px;
 }
 
 nav ul li a {
-  color: #fff;
+  color: #ECE3CE;
+  font-weight: bold;
+  font-size: 20px;
   text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: white;
 }
 
 /* Styling for the button */
@@ -83,12 +137,17 @@ nav ul li a {
   display: inline-block;
   padding: 15px 30px;
   font-size: 20px;
-  background-color: #3498db;
+  background-color: #739072;
   color: white;
   text-decoration: none;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 3px 3px #3A4D39;
+}
+
+.big-button:hover {
+  color: #ECE3CE;
 }
 
 /* Styling for the sections */
@@ -103,4 +162,137 @@ section {
 /* Custom style for the Services section */
 #services {
   background-color: #d0d0d0;
+}
+
+/* Styling for input form */
+#userForm {
+  color: black;
+}
+
+input,
+textarea,
+select,
+button {
+  width: 200px;
+  padding: 0;
+  margin: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border-color: #739072;
+}
+
+.contact-form {
+  max-width: 60vw; /* 60% of the viewport width */
+  /* max-height: 80vh; Limiting the max height to 80% of the viewport height */
+  margin: 0 auto;
+  padding: 5vw; /* 5% of the viewport width for padding */
+  border: 1px solid #ccc;
+  border-radius: 2vw; /* 2% of the viewport width for border radius */
+  background: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 3vw; /* 3% of the viewport width for margin */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 94%; /* 94% of the available width within the form-group */
+   max-height: 60vh; /* Limiting the max height to 80% of the viewport height */
+  padding: 2vw; /* 2% of the viewport width for padding */
+  border: 1px solid #ccc;
+  border-radius: 1vw; /* 1% of the viewport width for border radius */
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input[type="submit"] {
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  padding: 2vw 4vw; /* 2% of the viewport width for vertical padding, 4% for horizontal padding */
+  border: none;
+  border-radius: 1vw; /* 1% of the viewport width for border radius */
+}
+
+
+.contact-form {
+  max-width: 60vw; /* 60% of the viewport width */
+  /* max-height: 80vh; Limiting the max height to 80% of the viewport height */
+  margin: 0 auto;
+  padding: 5vw; /* 5% of the viewport width for padding */
+  border: 1px solid #ccc;
+  border-radius: 2vw; /* 2% of the viewport width for border radius */
+  background: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 3vw; /* 3% of the viewport width for margin */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 94%; /* 94% of the available width within the form-group */
+   max-height: 60vh; /* Limiting the max height to 80% of the viewport height */
+  padding: 2vw; /* 2% of the viewport width for padding */
+  border: 1px solid #ccc;
+  border-radius: 1vw; /* 1% of the viewport width for border radius */
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input[type="submit"] {
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  padding: 2vw 4vw; /* 2% of the viewport width for vertical padding, 4% for horizontal padding */
+  border: none;
+  border-radius: 1vw; /* 1% of the viewport width for border radius */
+}
+
+#location {
+  border-radius: 8px;
+  box-shadow: 10px 10px 6px 3px #739072;
+}
+
+/* Formatting for footer section of website for visual appeal */
+footer {
+  background-color: #3A4D39;
+  position: relative;
+  padding: 0 auto;
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
+  max-width: 200px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer p {
+  color: #ECE3CE;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer a {
+  color: #ECE3CE;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: white;
 }

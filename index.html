@@ -8,59 +8,92 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>House Hunch</title>
         <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-    </head>
-<body>
-    <header>
-        <div class="icon">
-            <img src="./images/icon.png" alt="Icon">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#" onclick="goTo('home')">Home</a></li>
-                <li><a href="#" onclick="goTo('services')">Services</a></li>
-                <li><a href="#" onclick="goTo('contact')">Contact</a></li>
-            </ul>
-        </nav>  
-    </header>
-
-    <script>
-        function goTo(section) {
-            // Perform an action based on the section clicked
-            // For example, scrolling to a specific section of the page
-            var targetSection = document.getElementById(section);
-            if (targetSection) {
-                targetSection.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    </script>
-  
-    <div id="home" style="height: 100vh; background-color: #f0f0f0;">
-        <br>
-        <h2>What is House Hunch? </h2>
-        <br>
-        <p>"At <span id="importantText">House Hunch</span>, our mission is to empower individuals in their quest for homeownership. 
-            We specialize in providing a <span id="importantText">tailored, comprehensive assessment</span> that evaluates and guides prospective homebuyers through their purchasing journey. 
-            Our commitment lies in leveraging innovative tools and expert insights to analyze individual financial capabilities, offering guidance, 
-            and equipping clients with the necessary knowledge to make informed decisions. We aim to be the compass that navigates individuals toward achieving their dream of owning a home, 
-            ensuring that each step taken is a confident and well-informed one..</p>
-        <br>
-        <img src="./images/image3.jpg" alt="Icon">
-    </div>
-
-    <div id="services" style="height: 100vh; background-color: #d0d0d0;">Services Section
-        <title>Button to Services Section</title>
-        <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+        <script type="text/javascript" src="https://bot.insertchatgpt.com/widgets/bubble.js?widget_id=428ac0d0-f29a-4987-84ef-cd9a7852dac2" async></script>
     </head>
     <body>
-        <div class="center">
-            <a href="form.html" class="big-button">Take me to the Calculator</a>
-        </div>
+        <header>
+            <div class="icon">
+                <img src="./images/HouseHunch.png" alt="Icon">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./form.html">Services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>  
+        </header>
+
+        <script>
+            function goTo(section) {
+                // Perform an action based on the section clicked
+                // For example, scrolling to a specific section of the page
+                var targetSection = document.getElementById(section);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        </script>
     
-        <section id="services">
-            <h2>Services Section</h2>
-            <p>This is the content for the Services Section.</p>
-        </section>
-    </div>
-    <div id="contact" style="height: 100vh; background-color: #c0c0c0;">Contact Section</div>
-</body>
+        <div id="home" style="height: 200vh; background-color: #ECE3CE;">
+            <div class="row">
+                <div class="column two">
+                    <br>
+                    <h2>What is<br>House Hunch?</h2>
+                    <br>
+                    <br>
+                    <p id="description">"At <span id="importantText">House Hunch</span>, our mission is to empower individuals in their quest for homeownership. 
+                        We specialize in providing a <span id="importantText">tailored, comprehensive assessment</span> that evaluates and guides prospective homebuyers through their purchasing journey. 
+                        Our commitment lies in leveraging innovative tools and expert insights to <span id="importantText">analyze individual financial capabilities</span>, offering guidance, 
+                        and equipping clients with the necessary knowledge to make informed decisions. We aim to be the compass that navigates individuals toward achieving their dream of owning a home, 
+                        ensuring that each step taken is a <span id="importantText">confident and well-informed one."</span></p>
+                    <br>
+                </div>
+                <div class="column two"> 
+                    <img src="./images/image3.jpg" id="homeImg" alt="Family and home">
+                </div>
+            </div>
+            <br><br>
+            <h2>How it Works</h2>
+            <div class="row2">
+                <div class="column two">
+                    <p id="description2">First, we ask for your information regarding <span id="importantText2"> credit score, 
+                        loan payments, monthly income, and house value</span>. We then use the given information in our formulas 
+                        to determine whether they pass the <span id="importantText2">4 main conditions</span> for approval.
+                    </p>
+                </div>
+                <div class="column two"> 
+                    <p id="description2">Using the formulas, we determine based off usual conditions of people that have eligibility
+                        to buy houses and compare the results from the data given by the user. After it determines your eligibility, 
+                        our <span id="importantText2">AI assistant</span> will be able to assist in determining your next moves if you were unsuccessful in the process
+                        to create better opportunities in buying a house.
+                    </p>
+                </div>
+            </div>
+            <div class="center">
+                <a href="form.html" class="big-button">Determine Eligibility</a>
+            </div>    
+        </div>
+        <div>Contact Section
+        <br>
+        <form action="send_email.php" method="post">
+            <label for="to">To:</label>
+            <input type="email" id="to" name="to" required><br><br>
+    
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required><br><br>
+    
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+    
+            <input type="submit" value="Send Email">
+        </form>
+    </div>  
+        <footer>
+            <div class="footer">
+                <p>House Hunch &copy;</p>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </footer>
+    </body>
 </html>
