@@ -1,3 +1,4 @@
+/* General set-up to have no spacing at first use */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,20 +6,52 @@
     font-family: 'Lexend Deca', sans-serif;
 }
 
+/* Set-up body info to keep same background color and align all text */
 body {
-    background-color: #FFFBF5;
+    background-color: #ECE3CE;
     text-align: center;
-    color: #C3ACD0;
+    color: #363062;
 }
 
 h2 {
-  color: #7743DB;
-  font-size: 30px;
+  color: #739072;
+  font-size: 45px;
+}
+
+/* Formats paragraph next to main image on home screen */
+#description {
+  font-size: 22px;
 }
 
 #importantText {
-  color: #7743DB;
+  color: #4F6F52;
   font-weight: bold;
+  font-size: 23px;
+}
+
+/* Rounds corners of image on home screen */
+#homeImg {
+  border-radius: 16px;
+}
+
+/* Create columns to split page in half*/
+.column {
+  float: left;
+}
+
+.column.two {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 40px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .content {
@@ -44,9 +77,9 @@ header {
   justify-content: center;
   align-items: center;
   position:sticky;
-  background-color: #C3ACD0;
-  color: #fff;
-  padding: 20px;
+  background-color: #3A4D39;
+  color: #ECE3CE;
+  padding: 25px;
 }
 
 .navbar {
@@ -65,12 +98,18 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 35px;
 }
 
 nav ul li a {
-  color: #fff;
+  color: #ECE3CE;
+  font-weight: bold;
+  font-size: 20px;
   text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: white;
 }
 
 /* Styling for the button */
