@@ -1,13 +1,13 @@
-document.getElementById("submitButton").addEventListener("click", function () {
-    // Get the input value
+function getValues() {
     var grossMonthlyIncome = document.getElementById("grossIncome").value;
     var houseValue = document.getElementById("houseValue").value;
     var mortgage = document.getElementById("mortgage").value;
     var creditCardPay = document.getElementById("creditCardPay").value;
     var carPay = document.getElementById("carPay").value;
     var studentLoan = document.getElementById("studentLoans").value;
-    alert("Your mortgage is $" + mortgage);
-});
+
+    alert(mortgage);
+}
 
 function LTV(downPayment, houseValue) {
     return downPayment/houseValue;
