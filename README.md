@@ -1,5 +1,5 @@
 # HouseHunch
-## Repo containing project files for hackathon submission
+## Repository containing files for real estate project
 
 Understanding what it takes to purchase a home has always been challenging. The paperwork can be extremely confusing and dense, and it is hard to figure out if you have the necessary means to complete the purchase. What steps can you take to improve your ability to purchase a home?
 
